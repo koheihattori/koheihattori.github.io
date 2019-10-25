@@ -1,6 +1,5 @@
 # koheihattori.github.io
-Kohei Hattori's Website
 
 ---
-permalink: /index.html
+[Kohei Hattori's webpage](https://koheihattori.github.io)
 ---
