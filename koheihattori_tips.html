@@ -30,7 +30,7 @@ Last update: 2024.June.10
 
     <a href="https://stackoverflow.com/questions/55746872/how-to-limit-number-of-cpus-used-by-a-python-script-w-o-terminal-or-multiproces"> link (How to limit number of CPU's used by a python script w/o terminal or multiprocessing library?)</a>  <br><br>
     
-        import os
+        import os <br>
         os.environ["OMP_NUM_THREADS"] = "1" # export OMP_NUM_THREADS=1 <br>
         os.environ["OPENBLAS_NUM_THREADS"] = "1" # export OPENBLAS_NUM_THREADS=1  <br>
         os.environ["MKL_NUM_THREADS"] = "1" # export MKL_NUM_THREADS=1  <br>
