@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    Tips for arXiv submission (Kohei Hattori's Home Page)
+    </title>
+</head>
+
+English:
+<a href="index.html">Memo: tips</a>
+
+Last update: 2024.Sep.5
+
+<body>
+    <!--
+    <img src="Kohei-Hattori-portrait.jpg" alt="portrait of Kohei Hattori" width="200" align="right">
+    
+    <img src="Kohei-Hattori-portrait2.jpg" alt="portrait of Kohei Hattori 2" width="200" align="right">
+    -->
+    <h1>
+    Tips
+    </h1>
+
+<hr>
+
+
+
+
+    
+    <h2>
+    arXiv submission
+    </h2>
+    
+    arXiv は*.bbl ファイルが必要だが、overleafでは*.bibファイルしか扱わない。overleafのファイルを全てローカル環境に置き、下記のコマンドでコンパイルすることで、*.bbl ファイルを作る。これを加えてarXivにアップロードすれば良い。<br>
+    
+    pdflatex main.tex <br>
+
+    bibtex main.aux <br>
+
+    pdflatex main.tex <br>
+
+    bibtex main.aux <br>
+
+    pdflatex main.tex <br>
+
+    <br><br>
+    
+    
+<hr>
+
+<br>
+
+
+
+</body>
+</html>
+

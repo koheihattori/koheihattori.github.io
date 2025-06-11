@@ -78,6 +78,24 @@ Last update: 2024.Sep.5
     <a href="https://tex.stackexchange.com/questions/481584/keynote-using-color-in-equation-to-match-keynote-color-scheme"> link (Color scheme for equation in Keynote)</a>  <br><br>
     
     
+    <h2>
+    arXiv submission
+    </h2>
+    
+    arXiv は*.bbl ファイルが必要だが、overleafでは*.bibファイルしか扱わない。overleafのファイルを全てローカル環境に置き、下記のコマンドでコンパイルすることで、*.bbl ファイルを作る。これを加えてarXivにアップロードすれば良い。<br>
+    
+    pdflatex main.tex <br>
+
+    bibtex main.aux <br>
+
+    pdflatex main.tex <br>
+
+    bibtex main.aux <br>
+
+    pdflatex main.tex <br>
+
+    <br><br>
+    
 <hr>
 
 <br>
