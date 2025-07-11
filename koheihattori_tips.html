@@ -96,6 +96,29 @@ Last update: 2024.Sep.5
 
     <br><br>
     
+    
+    <h2>
+    Extract data from PDF
+    </h2>
+    from svgpathtools import svg2paths  <br>
+    
+    import numpy as np  <br>
+
+    paths, attributes = svg2paths('figure.svg')  <br>
+
+    for k,path in enumerate(paths): <br>
+    
+        coords = [(seg.start.real, seg.start.imag) for seg in path]  <br>
+        
+        coords.append((path[-1].end.real, path[-1].end.imag))  # Add final point  <br>
+        
+        if (len(coords)>=1): <br>
+        
+            np.save('data_%03d.npy'%(k), coords)  <br>
+
+    <br><br>
+            
+    
 <hr>
 
 <br>
