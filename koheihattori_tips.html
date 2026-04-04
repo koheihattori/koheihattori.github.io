@@ -99,6 +99,17 @@ Last update: 2024.Sep.5
     
     
     <h2>
+    Decoding from Windows text to mac-roman.
+    </h2>
+    with open("text.txt", "r", encoding="mac_roman") as f:<br>
+    ____corrupted = f.read()<br>
+    <br>
+    recovered = corrupted.encode("mac_roman", errors="ignore").decode("cp932", errors="ignore")<br>
+    <br>
+    print(recovered)<br><br>
+    
+    
+    <h2>
     arXiv submission
     </h2>
     
